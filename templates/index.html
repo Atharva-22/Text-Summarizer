@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Home</title>
+    <link href="{{ url_for('static', filename='css/nicepage.css') }}" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="{{ url_for('static', filename='css/Home.css') }}" type="text/css" rel="stylesheet" media="screen,projection" />
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <!-- <meta name="generator" content="Nicepage 3.12.1, nicepage.com"> -->
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Barlow:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    
+    
+    <script type="application/ld+json">{
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "",
+      "url": "index.html"
+  }</script>
+      <meta property="og:title" content="Home">
+      <meta property="og:type" content="website">
+      <meta name="theme-color" content="#29b7dd">
+      <link rel="canonical" href="index.html">
+      <meta property="og:url" content="index.html">
+    </head>
+    <body data-home-page="Home.html" data-home-page-title="Home" class="u-body"><header class="u-align-left u-clearfix u-custom-color-2 u-header u-header" id="sec-2485"><div class="u-clearfix u-sheet u-sheet-1">
+          <h3 class="u-align-left-xs u-headline u-text u-text-1">
+            <a href="/">TEXT SUMMARIZER</a>
+          </h3>
+        </div></header>
+
+      <section class="u-align-center u-clearfix u-grey-10 u-section-1" id="sec-9267">
+        <div class="u-clearfix u-sheet u-sheet-1">
+          <h2 class="u-text u-text-1">Easiest Way To Summarize Your Text</h2>
+          <div class="u-border-1 u-border-grey-10 u-container-style u-grey-5 u-group u-radius-15 u-shape-round u-group-1">
+            <div class="u-container-layout u-container-layout-1">
+              <div class="u-form u-form-1">
+                <form action="/summarize" method="POST" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 15px;" source="custom" name="form">
+                  <button class="u-btn u-btn-round u-button-style u-custom-color-2 u-hover-palette-1-light-1 u-radius-6 u-btn-2" type="reset">Clear</button>
+                  <button class="u-btn u-btn-round u-button-style u-custom-color-3 u-hover-palette-1-light-1 u-radius-6 u-btn-1" type="submit">Summarize</button>
+                  <br>
+                  
+                  <div class="u-form-group u-form-group-1">
+                    <label for="text-a9a4" class="u-form-control-hidden u-label"></label>
+                    <input type="text" placeholder="Input page URL" id="text-a9a4" name="raw_url" class="u-border-1 u-border-grey-30 u-input u-input-rectangle">
+                  </div>
+                  <div class="u-form-group u-form-message u-form-group-2">
+                    <label for="message-6797" class="u-form-control-hidden u-label"></label>
+                    <textarea placeholder="Enter Text" rows="6" cols="50" id="message-6797" name="rawtext" class="u-border-1 u-border-grey-30 u-input u-input-rectangle"></textarea>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="u-align-left u-border-1 u-border-grey-10 u-container-style u-grey-5 u-group u-radius-15 u-shape-round u-group-2">
+            <div class="u-container-layout u-container-layout-2">
+              <div class="u-custom-color-3 u-shape u-shape-rectangle u-shape-1"></div>
+              <h3 class="u-align-center u-text u-text-body-alt-color u-text-2">Summarized Text</h3>
+              <div class="fr-view u-clearfix u-rich-text u-text u-text-3">
+                <p style="text-align: left;">
+                  <span style="line-height: 2.0;">{{ final_summary }}&nbsp;</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+      <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-2692"><div class="u-clearfix u-sheet u-sheet-1">
+          <p class="u-small-text u-text u-text-variant u-text-1">Made by&nbsp;<br>Atharva Deshpande
+          </p>
+        </div></footer>
+      </section>
+    </body>
+  </html>
